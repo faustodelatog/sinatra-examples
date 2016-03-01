@@ -1,11 +1,11 @@
 # books_controller.rb
 require 'sinatra/base'
 
-class BooksController < Sinatra::Base
+class BooksController < ApplicationBaseController
 
   get '/' do
     puts "getting all books"
-    'all books'
+    erb :'/books', :layout => :'layout/public'
   end
 
   get '/:id' do |id|

@@ -1,11 +1,11 @@
 # authors_controller.rb
 require 'sinatra/base'
 
-class AuthorsController < Sinatra::Base
+class AuthorsController < ApplicationBaseController
 
   get '/' do
     puts "getting all the authors"
-    "all authors"
+    erb :authors, :layout => :'layout/public'
   end
 
   get '/:name' do |name|
