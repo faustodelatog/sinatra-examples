@@ -1,5 +1,4 @@
 # books_controller.rb
-require 'sinatra/base'
 
 class BooksController < ApplicationBaseController
 

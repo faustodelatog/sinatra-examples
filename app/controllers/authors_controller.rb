@@ -1,5 +1,4 @@
 # authors_controller.rb
-require 'sinatra/base'
 
 class AuthorsController < ApplicationBaseController
 
