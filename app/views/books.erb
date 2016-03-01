@@ -1,1 +1,5 @@
 <p style="font-family: 'Andale Mono'">Este es el texto de los libros</p>
+
+<% @books.each do |book| %>
+        <%= book.code %> - <%= book.name %><br />
+<% end %>
